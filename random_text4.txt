@@ -1,0 +1,18 @@
+The quick brown fox jumps over the lazy dog.
+This sentence is often used to test typewriters and keyboards.
+It's a pangram, meaning it contains every letter of the English alphabet.
+Did you know that it's been used since the 19th century for typeface testing?
+
+Here are some other pangrams:
+1. "Pack my box with five dozen liquor jugs."
+2. "The five boxing wizards jump quickly."
+3. "How vexingly quick daft zebras jump!"
+4. "Sphinx of black quartz, judge my vow."
+
+Pangrams are not just fun, they're useful for testing fonts, layouts, and even encryption systems.
+The challenge lies in creating the shortest possible pangram.
+Some have achieved pangrams in as few as 26 letters, but they often sacrifice readability.
+For example, "Mr Jock, TV quiz PhD, bags few lynx."
+
+The quick brown fox may not be the shortest, but it's one of the most iconic.
+Its simplicity and elegance make it a favorite among typographers and designers alike.

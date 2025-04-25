@@ -1,3 +1,5 @@
+from huffman_tree import extract, huffman_tree
+
 def xor_cipher(binary_code, key):
     """
     Perform XOR encryption on a binary string using a key.
@@ -114,16 +116,34 @@ def run_tests():
 
         # Check if the decryption matches the original Huffman codes
         if decrypted_codes == huffman_codes:
-            print("Test case " + str(idx + 1) + ": PASSED")
+            print("Test case : PASSED")
         else:
-            print("Test case " + str(idx + 1) + ": FAILED")
+            print("Test case : FAILED")
             print("Original:", huffman_codes)
             print("Encrypted:", encrypted_codes)
             print("Decrypted:", decrypted_codes)
 
 
 # Main function to test the encryption and decryption
+def main():
+    # 1. Suppose huffman_codes is already built by your compression routines:
+
+
+    # 2. Prompt the user for a binary key (e.g. "1010")
+    key = input("Enter your binary XOR key (e.g. 1010): ").strip()
+
+    # Optional: you could also let the user enter a text password
+    # and then convert it to a binary key, e.g. via hashing.
+    # password = input("Enter a password: ")
+    # key = hashlib.sha256(password.encode()).hexdigest()  # then convert hex→binary
+    
+    # 3. Encrypt the codes
+    encrypted = encrypt_decrypt_with_xor(huffman_tree, key)
+    print("Encrypted codes:", encrypted)
+
+    # 4. Decrypt (same function, same key)
+    decrypted = encrypt_decrypt_with_xor(encrypted, key)
+    print("Decrypted codes:", decrypted)
+
 if __name__ == "__main__":
-    # Step 1: Run the automated tests
-    print("Running Automated Tests:")
-    run_tests()
+    main()
